@@ -16,7 +16,7 @@ namespace ClasesBase
         }
         private string cli_dni;
 
-        public int Cli_dni
+        public string Cli_dni
         {
             get { return cli_dni; }
             set { cli_dni = value; }
@@ -35,7 +35,7 @@ namespace ClasesBase
             get { return per_codigo; }
             set { per_codigo = value; }
         }
-        private DateTime pre_fecha;
+        private int pre_fecha;
 
         public int Pre_fecha
         {
@@ -44,14 +44,14 @@ namespace ClasesBase
         }
         private decimal pre_importe;
 
-        public int Pre_importe
+        public decimal Pre_importe
         {
             get { return pre_importe; }
             set { pre_importe = value; }
         }
         private double pre_tasaInteres;
 
-        public int Pre_tasaInteres
+        public double Pre_tasaInteres
         {
             get { return pre_tasaInteres; }
             set { pre_tasaInteres = value; }
@@ -65,7 +65,7 @@ namespace ClasesBase
         }
         private string pre_estado;
 
-        public int Pre_estado
+        public string Pre_estado
         {
             get { return pre_estado; }
             set { pre_estado = value; }

@@ -13,17 +13,12 @@ namespace ClasesBase
         private string usu_apellidoNombre;
         protected string usu_rolCodigo;
 
-
-
-
         // Constructor
         public Usuario(string nombreUsuario, string contraseña)
         {
             Usu_NombreUsuario = nombreUsuario;
             Usu_Contraseña = contraseña;
         }
-
-
 
 
         public int Usu_ID

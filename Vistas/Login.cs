@@ -43,9 +43,9 @@ namespace Vistas
                 Form f1 = new FrmPrincipal();
                 this.Hide(); // Opcional: ocultar el formulario de login
                 // Si se encontró el usuario, abrir el formulario principal
-               
+
                 f1.Show();
-                
+
             }
             else
             {
@@ -54,7 +54,19 @@ namespace Vistas
             }
         }
 
-      
-       
+        private void btnIngresar_MouseHover(object sender, EventArgs e)
+        {
+            // Ejemplo: Cambiar el color de fondo
+            btnIngresar.BackColor = Color.Violet;
+            // Ejemplo: Cambiar el color del texto
+            btnIngresar.ForeColor = Color.GreenYellow;
+        }
+
+        private void btnIngresar_MouseLeave(object sender, EventArgs e)
+        {
+            btnIngresar.BackColor = Color.White;
+            btnIngresar.ForeColor = Color.Black;
+        }
+
     }
 }

@@ -15,5 +15,24 @@ namespace Vistas
         {
             InitializeComponent();
         }
+
+        private void altaDeClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCliente oFrmCliente = new FrmCliente();
+            oFrmCliente.Show();
+        }
+
+        private void altaDePeriodoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmPeriodo oFrmPeriodo = new FrmPeriodo();
+            oFrmPeriodo.Show();
+        }
+
+        private void altaDeDestinoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmDestino oFrmDestino = new FrmDestino();
+            oFrmDestino.Show();
+        }
+
     }
 }

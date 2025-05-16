@@ -15,93 +15,67 @@ namespace ClasesBase
         private decimal cli_ingresos;
         private string cli_direccion;
         private string cli_telefono;
-    
+
         public string Cli_dni
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_dni; }
+            set { cli_dni = value; }
         }
 
         public string Cli_nombre
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_nombre; }
+            set { cli_nombre = value; }
         }
 
         public string Cli_apellido
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_apellido; }
+            set { cli_apellido = value; }
         }
 
         public string Cli_sexo
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_sexo; }
+            set { cli_sexo = value; }
         }
 
         public DateTime Cli_fechaNacimiento
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_fechaNacimiento; }
+            set { cli_fechaNacimiento = value; }
         }
 
-        public decimal Cli_Ingresos
+        public decimal Cli_ingresos
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_ingresos; }
+            set { cli_ingresos = value; }
         }
 
-        public string Cli_Direccion
+        public string Cli_direccion
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_direccion; }
+            set { cli_direccion = value; }
         }
 
-        public string Cli_Telefono
+        public string Cli_telefono
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return cli_telefono; }
+            set { cli_telefono = value; }
         }
+
+        public Cliente(string dni, string nombre, string apellido, string sexo, DateTime fechaNacimiento, decimal ingresos, string direccion, string telefono)
+        {
+            Cli_dni = dni;
+            Cli_nombre = nombre;
+            Cli_apellido = apellido;
+            Cli_sexo = sexo;
+            Cli_fechaNacimiento = fechaNacimiento;
+            Cli_ingresos = ingresos;
+            Cli_direccion = direccion;
+            Cli_telefono = telefono;
+        }
+
+        public Cliente() { }
     }
 }

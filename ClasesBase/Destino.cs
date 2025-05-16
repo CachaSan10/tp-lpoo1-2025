@@ -21,5 +21,13 @@ namespace ClasesBase
             get { return des_codigo; }
             set { des_codigo = value; }
         }
+
+        public Destino(int codigo, string descripcion)
+        {
+            Des_codigo = codigo;
+            Des_descripcion = descripcion;
+        }
+
+        public Destino() { }
     }
 }

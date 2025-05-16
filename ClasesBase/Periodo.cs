@@ -21,5 +21,13 @@ namespace ClasesBase
             get { return per_codigo; }
             set { per_codigo = value; }
         }
+
+        public Periodo(int codigo, string descripcion)
+        {
+            Per_codigo = codigo;
+            Per_descripcion = descripcion;
+        }
+
+        public Periodo() { }
     }
 }

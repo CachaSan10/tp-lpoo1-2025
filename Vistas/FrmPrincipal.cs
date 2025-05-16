@@ -34,5 +34,18 @@ namespace Vistas
             oFrmDestino.Show();
         }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmacion = MessageBox.Show(
+                "¿Estás seguro de que deseas salir del sistema?",
+                "Confirmación de salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (confirmacion == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

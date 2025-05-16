@@ -42,5 +42,12 @@
       <FileName>Pago.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ClasesBase.Cuota">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQBAAAAAQAAAAAAAAQABAAEAAQABBAAAAQQAAAAAA=</HashCode>
+      <FileName>Cuota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

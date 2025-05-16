@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Cuota.cs" />
     <Compile Include="Destino.cs" />
     <Compile Include="Pago.cs" />
     <Compile Include="Periodo.cs" />

@@ -20,6 +20,7 @@ namespace Vistas
 
         private void CargarUsuarios()
         {
+
             usuarios = new List<Usuario>
             {
                 new Usuario("Administrador", "123"),
@@ -39,10 +40,12 @@ namespace Vistas
 
             if (usuarioEncontrado != null)
             {
-                // Si se encontró el usuario, abrir el formulario principal
                 Form f1 = new FrmPrincipal();
-                f1.Show();
                 this.Hide(); // Opcional: ocultar el formulario de login
+                // Si se encontró el usuario, abrir el formulario principal
+               
+                f1.Show();
+                
             }
             else
             {
@@ -51,20 +54,7 @@ namespace Vistas
             }
         }
 
-        private void textNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textContrasenia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
       
-
-      
-
        
     }
 }

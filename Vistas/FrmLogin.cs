@@ -9,10 +9,10 @@ using System.Windows.Forms;
 using ClasesBase; // Asegúrate de incluir el espacio de nombres
 namespace Vistas
 {
-    public partial class Login : Form
+    public partial class FrmLogin : Form
     {
         private List<Usuario> usuarios;
-        public Login()
+        public FrmLogin()
         {
             InitializeComponent();
             CargarUsuarios();
@@ -67,6 +67,27 @@ namespace Vistas
             btnIngresar.BackColor = Color.White;
             btnIngresar.ForeColor = Color.Black;
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnCancelar_MouseHover(object sender, EventArgs e)
+        {
+            btnCancelar.BackColor = Color.Red;
+            btnCancelar.ForeColor = Color.White;
+        }
+
+        private void btnCancelar_MouseLeave(object sender, EventArgs e)
+        {
+            btnCancelar.BackColor = Color.White;
+            btnCancelar.ForeColor = Color.Black;
+        }
+
+       
+
+        
 
     }
 }

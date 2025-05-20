@@ -49,5 +49,12 @@
       <FileName>Cuota.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ClasesBase.Rol">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAAAAAAAAgAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

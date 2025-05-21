@@ -34,9 +34,19 @@ namespace Vistas
         {
             string user = textNombre.Text;
             string pwd = textContrasenia.Text;
+            Usuario usuarioEncontrado = null;
 
             // Buscar el usuario en la lista de usuarios
-            Usuario usuarioEncontrado = usuarios.FirstOrDefault(u => u.Usu_NombreUsuario.Equals(user, StringComparison.OrdinalIgnoreCase) && u.Usu_Contraseña == pwd);
+
+            foreach (Usuario usuario in usuarios)
+            {
+                if (usuario.Usu_NombreUsuario == user && usuario.Usu_Contraseña == pwd)
+                {
+                    usuarioEncontrado = usuario;
+                }
+
+            }
+
 
             if (usuarioEncontrado != null)
             {
@@ -83,6 +93,11 @@ namespace Vistas
         {
             btnCancelar.BackColor = Color.White;
             btnCancelar.ForeColor = Color.Black;
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
 
        

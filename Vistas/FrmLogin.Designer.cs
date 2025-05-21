@@ -43,10 +43,10 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.White;
             this.btnIngresar.ForeColor = System.Drawing.Color.Black;
-            this.btnIngresar.Location = new System.Drawing.Point(219, 134);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIngresar.Location = new System.Drawing.Point(164, 109);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(93, 34);
+            this.btnIngresar.Size = new System.Drawing.Size(70, 28);
             this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -58,28 +58,29 @@
             // 
             this.textNombre.AccessibleDescription = "";
             this.textNombre.BackColor = System.Drawing.SystemColors.Info;
-            this.textNombre.Location = new System.Drawing.Point(147, 38);
-            this.textNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textNombre.Location = new System.Drawing.Point(110, 31);
+            this.textNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(165, 22);
+            this.textNombre.Size = new System.Drawing.Size(125, 20);
             this.textNombre.TabIndex = 1;
             // 
             // textContrasenia
             // 
             this.textContrasenia.BackColor = System.Drawing.SystemColors.Info;
-            this.textContrasenia.Location = new System.Drawing.Point(147, 86);
-            this.textContrasenia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textContrasenia.Location = new System.Drawing.Point(110, 70);
+            this.textContrasenia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textContrasenia.Name = "textContrasenia";
             this.textContrasenia.PasswordChar = '*';
-            this.textContrasenia.Size = new System.Drawing.Size(165, 22);
+            this.textContrasenia.Size = new System.Drawing.Size(125, 20);
             this.textContrasenia.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(74, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(56, 19);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(39, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -87,9 +88,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(74, 71);
+            this.pictureBox2.Location = new System.Drawing.Point(56, 58);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 37);
+            this.pictureBox2.Size = new System.Drawing.Size(39, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -98,10 +100,10 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.White;
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(94, 134);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(70, 109);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(93, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(70, 28);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -111,18 +113,19 @@
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 188);
+            this.ClientSize = new System.Drawing.Size(302, 153);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textContrasenia);
             this.Controls.Add(this.textNombre);
             this.Controls.Add(this.btnIngresar);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmLogin";
             this.Text = "BIENVENIDO AL SISTEMA";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

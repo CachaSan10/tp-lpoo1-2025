@@ -40,7 +40,7 @@
             this.btnDesGuardar.Location = new System.Drawing.Point(225, 189);
             this.btnDesGuardar.Name = "btnDesGuardar";
             this.btnDesGuardar.Size = new System.Drawing.Size(107, 39);
-            this.btnDesGuardar.TabIndex = 9;
+            this.btnDesGuardar.TabIndex = 4;
             this.btnDesGuardar.Text = "Guardar";
             this.btnDesGuardar.UseVisualStyleBackColor = true;
             this.btnDesGuardar.Click += new System.EventHandler(this.btnDesGuardar_Click);
@@ -50,14 +50,14 @@
             this.txtDesDescripcion.Location = new System.Drawing.Point(203, 134);
             this.txtDesDescripcion.Name = "txtDesDescripcion";
             this.txtDesDescripcion.Size = new System.Drawing.Size(158, 22);
-            this.txtDesDescripcion.TabIndex = 8;
+            this.txtDesDescripcion.TabIndex = 3;
             // 
             // txtDesCodigo
             // 
             this.txtDesCodigo.Location = new System.Drawing.Point(203, 84);
             this.txtDesCodigo.Name = "txtDesCodigo";
             this.txtDesCodigo.Size = new System.Drawing.Size(158, 22);
-            this.txtDesCodigo.TabIndex = 7;
+            this.txtDesCodigo.TabIndex = 1;
             // 
             // label2
             // 
@@ -65,7 +65,7 @@
             this.label2.Location = new System.Drawing.Point(69, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 17);
-            this.label2.TabIndex = 6;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Descripción";
             // 
             // label1
@@ -74,7 +74,7 @@
             this.label1.Location = new System.Drawing.Point(69, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 17);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Código";
             // 
             // FrmDestino

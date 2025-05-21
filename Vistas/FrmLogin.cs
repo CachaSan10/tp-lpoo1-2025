@@ -67,40 +67,49 @@ namespace Vistas
         private void btnIngresar_MouseHover(object sender, EventArgs e)
         {
             // Ejemplo: Cambiar el color de fondo
-            btnIngresar.BackColor = Color.Violet;
+            btnIngresar.BackColor = Color.DarkCyan;
             // Ejemplo: Cambiar el color del texto
-            btnIngresar.ForeColor = Color.GreenYellow;
+            btnIngresar.ForeColor = Color.LightSalmon;
+
+            btnIngresar.Font = new System.Drawing.Font("Arial Black", 7, System.Drawing.FontStyle.Italic);
         }
 
         private void btnIngresar_MouseLeave(object sender, EventArgs e)
         {
             btnIngresar.BackColor = Color.White;
             btnIngresar.ForeColor = Color.Black;
+            btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8, System.Drawing.FontStyle.Regular);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult confirmacion = MessageBox.Show(
+             "¿Estás seguro de que deseas salir del sistema?",
+             "Confirmación de salida",
+             MessageBoxButtons.YesNo,
+             MessageBoxIcon.Question);
+
+            if (confirmacion == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnCancelar_MouseHover(object sender, EventArgs e)
         {
             btnCancelar.BackColor = Color.Red;
             btnCancelar.ForeColor = Color.White;
+            btnCancelar.Font = new System.Drawing.Font("Georgia", 7, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
+
+            
         }
 
         private void btnCancelar_MouseLeave(object sender, EventArgs e)
         {
             btnCancelar.BackColor = Color.White;
             btnCancelar.ForeColor = Color.Black;
+            btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8, System.Drawing.FontStyle.Regular);
         }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
 
         
 

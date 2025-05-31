@@ -114,7 +114,7 @@ namespace Vistas
 
             if (usuarioEncontrado)
             {
-                Form f1 = new FrmPrincipal();
+                Form f1 = new FrmPrincipal(rolDescripcion);
                 this.Hide(); // Opcional: ocultar el formulario de login
                 // Si se encontró el usuario, abrir el formulario principal
                 MessageBox.Show("Bienvenido al sistema " + nombreUsuarioEncontrado + "Con rol: " + rolDescripcion);

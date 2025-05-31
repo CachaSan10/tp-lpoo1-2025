@@ -11,9 +11,34 @@ namespace Vistas
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        public FrmPrincipal(string rolUsuario)
         {
             InitializeComponent();
+           ConfigurarMenuPorRol(rolUsuario);
+        }
+
+        private void ConfigurarMenuPorRol(string rol)
+        {
+
+            sistemaToolStripMenuItem.Visible = false;
+            clientesToolStripMenuItem1.Visible = false;
+            prestamosToolStripMenuItem1.Visible = false;
+            switch (rol)
+            {
+                case "Administrador":
+                    sistemaToolStripMenuItem.Visible = true;
+                    clientesToolStripMenuItem1.Visible = true;
+                    break;
+                case "Auditor":
+                    clientesToolStripMenuItem1.Visible = true;
+                    prestamosToolStripMenuItem1.Visible = true;
+                    break;
+                case "Operador":
+                    sistemaToolStripMenuItem.Visible = true;
+                    clientesToolStripMenuItem1.Visible = true;
+                    prestamosToolStripMenuItem1.Visible = true;
+                    break;
+            }
         }
 
         private void altaDeClienteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +71,11 @@ namespace Vistas
             {
                 Application.Exit();
             }
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

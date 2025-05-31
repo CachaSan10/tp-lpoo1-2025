@@ -47,10 +47,9 @@
             this.clientesToolStripMenuItem1,
             this.prestamosToolStripMenuItem1,
             this.sistemaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(488, 11);
+            this.menuStrip1.Location = new System.Drawing.Point(446, 9);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(287, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(243, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,13 +58,13 @@
             this.clientesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.altaDeClienteToolStripMenuItem});
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(85, 29);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             // 
             // altaDeClienteToolStripMenuItem
             // 
             this.altaDeClienteToolStripMenuItem.Name = "altaDeClienteToolStripMenuItem";
-            this.altaDeClienteToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
+            this.altaDeClienteToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.altaDeClienteToolStripMenuItem.Text = "Alta de Cliente";
             this.altaDeClienteToolStripMenuItem.Click += new System.EventHandler(this.altaDeClienteToolStripMenuItem_Click);
             // 
@@ -75,34 +74,35 @@
             this.altaDePeriodoToolStripMenuItem1,
             this.altaDeDestinoToolStripMenuItem1});
             this.prestamosToolStripMenuItem1.Name = "prestamosToolStripMenuItem1";
-            this.prestamosToolStripMenuItem1.Size = new System.Drawing.Size(107, 29);
+            this.prestamosToolStripMenuItem1.Size = new System.Drawing.Size(89, 24);
             this.prestamosToolStripMenuItem1.Text = "Prestamos";
             // 
             // altaDePeriodoToolStripMenuItem1
             // 
             this.altaDePeriodoToolStripMenuItem1.Name = "altaDePeriodoToolStripMenuItem1";
-            this.altaDePeriodoToolStripMenuItem1.Size = new System.Drawing.Size(206, 30);
+            this.altaDePeriodoToolStripMenuItem1.Size = new System.Drawing.Size(181, 24);
             this.altaDePeriodoToolStripMenuItem1.Text = "Alta de Periodo";
             this.altaDePeriodoToolStripMenuItem1.Click += new System.EventHandler(this.altaDePeriodoToolStripMenuItem1_Click);
             // 
             // altaDeDestinoToolStripMenuItem1
             // 
             this.altaDeDestinoToolStripMenuItem1.Name = "altaDeDestinoToolStripMenuItem1";
-            this.altaDeDestinoToolStripMenuItem1.Size = new System.Drawing.Size(206, 30);
+            this.altaDeDestinoToolStripMenuItem1.Size = new System.Drawing.Size(181, 24);
             this.altaDeDestinoToolStripMenuItem1.Text = "Alta de Destino";
             this.altaDeDestinoToolStripMenuItem1.Click += new System.EventHandler(this.altaDeDestinoToolStripMenuItem1_Click);
             // 
             // sistemaToolStripMenuItem
             // 
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(86, 29);
+            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(329, 567);
+            this.btnSalir.Location = new System.Drawing.Point(292, 454);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(115, 51);
+            this.btnSalir.Size = new System.Drawing.Size(102, 41);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -110,15 +110,15 @@
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 621);
+            this.ClientSize = new System.Drawing.Size(715, 497);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmPrincipal";
             this.Text = "Sistema de Prestamos";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

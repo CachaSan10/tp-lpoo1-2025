@@ -36,6 +36,14 @@
             this.altaDeDestinoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.destinosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarDestinosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarPeriodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarPagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,10 +54,14 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem1,
             this.prestamosToolStripMenuItem1,
-            this.sistemaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(446, 9);
+            this.sistemaToolStripMenuItem,
+            this.usuariosToolStripMenuItem,
+            this.destinosToolStripMenuItem,
+            this.periodosToolStripMenuItem,
+            this.pagosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(153, 9);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(243, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(536, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -108,6 +120,63 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarUsuariosToolStripMenuItem});
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // administrarUsuariosToolStripMenuItem
+            // 
+            this.administrarUsuariosToolStripMenuItem.Name = "administrarUsuariosToolStripMenuItem";
+            this.administrarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.administrarUsuariosToolStripMenuItem.Text = "Administrar Usuarios";
+            this.administrarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.administrarUsuariosToolStripMenuItem_Click_1);
+            // 
+            // destinosToolStripMenuItem
+            // 
+            this.destinosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarDestinosToolStripMenuItem});
+            this.destinosToolStripMenuItem.Name = "destinosToolStripMenuItem";
+            this.destinosToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.destinosToolStripMenuItem.Text = "Destinos";
+            // 
+            // administrarDestinosToolStripMenuItem
+            // 
+            this.administrarDestinosToolStripMenuItem.Name = "administrarDestinosToolStripMenuItem";
+            this.administrarDestinosToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.administrarDestinosToolStripMenuItem.Text = "Administrar Destinos";
+            // 
+            // periodosToolStripMenuItem
+            // 
+            this.periodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarPeriodoToolStripMenuItem});
+            this.periodosToolStripMenuItem.Name = "periodosToolStripMenuItem";
+            this.periodosToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.periodosToolStripMenuItem.Text = "Periodos";
+            // 
+            // administrarPeriodoToolStripMenuItem
+            // 
+            this.administrarPeriodoToolStripMenuItem.Name = "administrarPeriodoToolStripMenuItem";
+            this.administrarPeriodoToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.administrarPeriodoToolStripMenuItem.Text = "Administrar Periodo";
+            // 
+            // pagosToolStripMenuItem
+            // 
+            this.pagosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarPagosToolStripMenuItem});
+            this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
+            this.pagosToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.pagosToolStripMenuItem.Text = "Pagos";
+            // 
+            // administrarPagosToolStripMenuItem
+            // 
+            this.administrarPagosToolStripMenuItem.Name = "administrarPagosToolStripMenuItem";
+            this.administrarPagosToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.administrarPagosToolStripMenuItem.Text = "Administrar Pagos";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -136,5 +205,13 @@
         private System.Windows.Forms.ToolStripMenuItem altaDeDestinoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem destinosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarDestinosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem periodosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarPeriodoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarPagosToolStripMenuItem;
     }
 }

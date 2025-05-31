@@ -23,20 +23,30 @@ namespace Vistas
             sistemaToolStripMenuItem.Visible = false;
             clientesToolStripMenuItem1.Visible = false;
             prestamosToolStripMenuItem1.Visible = false;
+            usuariosToolStripMenuItem.Visible = false;
+            destinosToolStripMenuItem.Visible = false;
+            periodosToolStripMenuItem.Visible = false;
+            pagosToolStripMenuItem.Visible = false;
             switch (rol)
             {
                 case "Administrador":
-                    sistemaToolStripMenuItem.Visible = true;
-                    clientesToolStripMenuItem1.Visible = true;
+                    usuariosToolStripMenuItem.Visible = true;
+                    destinosToolStripMenuItem.Visible = true;
+                    periodosToolStripMenuItem.Visible = true;
                     break;
                 case "Auditor":
                     clientesToolStripMenuItem1.Visible = true;
                     prestamosToolStripMenuItem1.Visible = true;
+                    pagosToolStripMenuItem.Visible = true;
                     break;
                 case "Operador":
-                    sistemaToolStripMenuItem.Visible = true;
+                    usuariosToolStripMenuItem.Visible = true;
+                    destinosToolStripMenuItem.Visible = true;
+                    periodosToolStripMenuItem.Visible = true;
                     clientesToolStripMenuItem1.Visible = true;
                     prestamosToolStripMenuItem1.Visible = true;
+                    pagosToolStripMenuItem.Visible = true;
+                    
                     break;
             }
         }
@@ -74,6 +84,11 @@ namespace Vistas
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void administrarUsuariosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
         }
